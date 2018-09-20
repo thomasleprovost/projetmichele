@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Crt/Automotive Typeface</title>
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.ico" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/mainV.css" />     <!-- /*VERTICAL*/-->
+  <link rel="stylesheet" href="css/swiper.min.css"/>                <!-- /*VERTICAL*/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="horizontal">
+    <div class="wrapper">
+
+      <div class='light-rect'></div>
+      <p id="icons">
+        𝄪𝄢♪♫♩
+      </p>
+
+      <hr class = "hrh">
+        <div id="target"></div>
+        <p id="km">km/h</p>
+        <img src='assets/SVG/50v.svg' class='v-50 hide'>
+        <img src="assets/SVG/120v.svg" class='v-120 hide'>
+      <hr class = "hrh">
+
+      <p id="fuel">
+        Average Fuel Consumption <br> 30.1 L
+      </p>
+
+    </div>
+
+
+
+    <!-- <nav style="display:none">
+      <label class="switch" id="switch">
+        <input type="checkbox">
+        <span class="slider auto"></span>
+      </label>
+    </nav> -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="vertical">
+
+    <div id="clockbox"></div>
+    <div class = "location">23°C 𝄞<br>Renens, VD</div>
+
+
+    <hr class="hrv">
+
+      <button class="accordion">♬ Text Blocks</button>
+      <div class="panel">
+
+
+        <div class ="threesixpts">
+            <div class="slideContainer">
+
+              <div class="controlbar">
+                Bold
+                <input type="checkbox" id="bold-on-1">
+                Italic
+                <input type="checkbox" id="italic-on-1">
+                All Caps
+                <input type="checkbox" id="all-caps-on-1">
+              </div>
+
+
+          <p id="p-1" >
+            The first ever application of an electronic instrument cluster in production automobile, was 1976 Aston Martin Lagonda. The first American automobile was the 1978 Cadillac Seville all  available Cadillac Trip Computer.
+          </p>
+
+            <p id="ptsizetxt">Crt, 37px </p>
+
+          <hr id="blackline">
+
+
+              <div class="controlbar">
+                Bold
+                <input type="checkbox" id="bold-on-2">
+                Italic
+                <input type="checkbox" id="italic-on-2">
+                All Caps
+                <input type="checkbox" id="all-caps-on-2">
+              </div>
+
+
+
+        <p id="p-2" >
+           In the United States they were an option in many motor vehicles manufactured in the 1980s and 1990s, and were standard on some luxury vehicles at times, including some models made by Cadillac, Chrysler and Lincoln. They included not only a speedometer with a digital readout, but also a trip computer that displayed factors like the outdoor temperature, travel direction, fuel economy and distance to empty (DTE). In 1983, the Renault 11 Electronic was the first European hatchback to have a digital dashboard.
+        </p>
+
+          <p id="ptsizetxt">Crt, 25px </p>
+
+        <hr id="blackline">
+
+
+            <div class="controlbar">
+              Bold
+              <input type="checkbox" id="bold-on-3">
+              Italic
+              <input type="checkbox" id="italic-on-3">
+              All Caps
+              <input type="checkbox" id="all-caps-on-3">
+            </div>
+
+        <p id="p-3" >
+          Electrically operated display devices have developed from electromechanical systems for display of text, up to all-electronic devices capable of full-motion 3D color graphic displays. Electromagnetic devices, using a solenoid coil to control a visible flag or flap, were the earliest type, and were used for text displays such as stock market prices and arrival/departure display times. The cathode ray tube was the workhorse of text and video display technology for several decades until being displaced by plasma, liquid crystal (LCD) and solid-state devices such as LEDs and OLEDs. With the advent of microprocessors and microelectronic devices, many more individual picture elements ("pixels") could be incorporated into one display device, allowing graphic displays and video. One of the earliest electronic displays is the cathode ray tube (CRT), which was first demonstrated in 1897 and made commercial in 1922. The CRT consists of an electron gun that forms images by firing electrons onto a phosphor-coated screen. The earliest CRTs were monochrome and were used primarily in oscilloscopes and black and white televisions. The first commercial colour CRT was produced in 1954. CRTs were the single most popular display technology used in television sets and computer monitors for over half a century; it was not until the 2000s that LCDs began to gradually replace them. A derivative of CRTs were storage tubes, which had the ability to retain information displayed on them, unlike standard CRTs which need to be refreshed periodically. In 1968, Tektronix introduced the Direct-View Bistable Storage Tube, which went on to be widely used in oscilloscopes and computer terminals.
+        </p>
+
+        <p id="ptsizetxt">Crt, 14px </p>
+      <hr id="blackline">
+
+
+
+
+      </div>
+      </div>
+    </div>
+    <script>
+
+        // 1
+        var boldOn1 = document.querySelector('#bold-on-1');
+        var italicOn1 = document.querySelector('#italic-on-1');
+        var allCapsOn1 = document.querySelector('#all-caps-on-1');
+        var p1  = document.getElementById("p-1");
+
+        function update1() {
+
+          var wght = boldOn1.checked ? 165 : 95;
+          var ital = italicOn1.checked ? 30 : 0;
+          p1.style.fontVariationSettings = getSettings(wght, ital)
+        }
+
+        update1();
+
+        boldOn1.addEventListener('click', update1);
+        //boldOn1.addEventListener('touchend', update1);
+
+
+        italicOn1.addEventListener('click', update1);
+        //italicOn1.addEventListener('touchend', update1);
+
+        allCapsOn1.addEventListener('click', function () {
+           p1.style.textTransform = this.checked ? "uppercase" : "lowercase";
+        // })
+        //allCapsOn1.addEventListener('touchend', function () {
+          //p1.style.textTransform = this.checked ? "uppercase" : "lowercase";
+        })
+
+        //2
+
+        var boldOn2 = document.querySelector('#bold-on-2');
+        var italicOn2 = document.querySelector('#italic-on-2');
+        var allCapsOn2 = document.querySelector('#all-caps-on-2');
+        var p2  = document.getElementById("p-2");
+
+        function update2() {
+          var wght = boldOn2.checked ? 165 : 95;
+          var ital = italicOn2.checked ? 30 : 0;
+          p2.style.fontVariationSettings = getSettings(wght, ital)
+        }
+
+        update2();
+        boldOn2.addEventListener('click', update2);
+        italicOn2.addEventListener('click', update2);
+
+        allCapsOn2.addEventListener('click', function () {
+          p2.style.textTransform = this.checked ? "uppercase" : "lowercase";
+        })
+
+        //3
+
+        var boldOn3 = document.querySelector('#bold-on-3');
+        var italicOn3 = document.querySelector('#italic-on-3');
+        var allCapsOn3 = document.querySelector('#all-caps-on-3');
+        var p3  = document.getElementById("p-3");
+
+        function update3() {
+          var wght = boldOn3.checked ? 165 : 95;
+          var ital = italicOn3.checked ? 30 : 0;
+          p3.style.fontVariationSettings = getSettings(wght, ital)
+        }
+
+        update3();
+        boldOn3.addEventListener('click', update3);
+        italicOn3.addEventListener('click', update3);
+
+        allCapsOn3.addEventListener('click', function () {
+          p3.style.textTransform = this.checked ? "uppercase" : "lowercase";
+        })
+
+        function getSettings(wght, ital) {
+          return "'wght' " + (wght || 0) + ", 'ital' " + (ital || 0);
+        }
+
+        // var slider = document.getElementById("mySlide");
+        // var slider1 = document.getElementById("mySlide1");
+        // var slider2 = document.getElementById("mySlide2");
+        // var italicSlide = document.getElementById("italicSlide");
+        // var italicSlide1 = document.getElementById("italicSlide1");
+        // var italicSlide2 = document.getElementById("italicSlide2");
+        // var kid  = document.getElementById("childrenOfSlider");
+        // var kid1  = document.getElementById("childrenOfSlider1");
+        // var kid2  = document.getElementById("childrenOfSlider2");
+        //
+        // italicSlide.value = 0;
+        // italicSlide1.value = 0;
+        // italicSlide2.value = 0;
+        // slider.value = 95;
+        // slider1.value = 95;
+        // slider2.value = 95;
+        //
+        // italicSlide.addEventListener('input', function() {
+        //   kid.style.fontVariationSettings = "\"wght\" " + slider.value;
+        //   kid.style.fontVariationSettings += ", \"ital\" " + italicSlide.value;
+        // });
+        //
+        // italicSlide1.addEventListener('input', function() {
+        //   kid1.style.fontVariationSettings = "\"wght\" " + slider1.value;
+        //   kid1.style.fontVariationSettings += ", \"ital\" " + italicSlide1.value;
+        // });
+        //
+        // italicSlide2.addEventListener('input', function() {
+        //   kid2.style.fontVariationSettings = "\"wght\" " + slider2.value;
+        //   kid2.style.fontVariationSettings += ", \"ital\" " + italicSlide2.value;
+        // });
+        //
+        // slider.addEventListener('input', function(e) {
+        //   console.log(getSettings(slider.value, italicSlide.value))
+        //   kid.style.fontVariationSettings = getSettings(slider.value, italicSlide.value);
+        // });
+        //
+        // slider1.addEventListener('input', function(e) {
+        //   kid1.style.fontVariationSettings = "\"wght\" " + slider1.value;
+        //   kid1.style.fontVariationSettings += ", \"ital\" " + italicSlide1.value;
+        // });
+        //
+        // slider2.addEventListener('input', function(e) {
+        //   kid2.style.fontVariationSettings = "\"wght\" " + slider2.value;
+        //   kid2.style.fontVariationSettings += ", \"ital\" " + italicSlide2.value;
+        // });
+    </script>
+
+      <hr class="hrv">
+
+      <button class="accordion">𝄫 Character Samples</button>
+      <div class="panel">
+
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+
+                        <div class="ch_set">
+
+                          <div class="controlbar2">
+                           Bold
+                           <input type="checkbox" id="bold-on-5">
+                           Italic
+                           <input type="checkbox" id="italic-on-5">
+
+                         </div>
+
+
+                        <p id="alphabet">
+                        Aa Bb Cc Dd Ee <br>Ff
+                        Gg Hh Ii Jj Kk <br>Ll
+                        Mm Nn Oo Pp Qq Rr
+                        Ss Tt Uu Ww Xx Yy
+                        Zz
+                        <br>
+                        <br>
+                       1234567890
+                      </p>
+
+                      <p class ="ptsize" > Crt, 60px </p>
+
+</div>
+
+                      <script>
+
+                      var boldOn5 = document.querySelector('#bold-on-5');
+                      var italicOn5 = document.querySelector('#italic-on-5');
+                      var alphab  = document.getElementById("alphabet");
+
+                      function update5() {
+                        var wght = boldOn5.checked ? 165 : 95;
+                        var ital = italicOn5.checked ? 30 : 0;
+                        alphab.style.fontVariationSettings = getSettings(wght, ital)
+                      }
+
+                      update5();
+                      boldOn5.addEventListener('click', update5);
+                      italicOn5.addEventListener('click', update5);
+
+
+
+                          </script>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="words">
+
+              <div class="controlbar2">
+               Bold
+               <input type="checkbox" id="bold-on-6">
+               Italic
+               <input type="checkbox" id="italic-on-6">
+             </div>
+
+             <p id="address">
+              Walnut 76 <br>
+              Springfield,<br>
+               MI 68056
+             </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+              <p class="ptsize" >Crt, 90px</p>
+
+            </div>
+            <script>
+
+            var boldOn6 = document.querySelector('#bold-on-6');
+            var italicOn6 = document.querySelector('#italic-on-6');
+            var addr  = document.getElementById("address");
+
+            function update6() {
+              var wght = boldOn6.checked ? 165 : 95;
+              var ital = italicOn6.checked ? 30 : 0;
+              addr.style.fontVariationSettings = getSettings(wght, ital)
+            }
+
+            update6();
+            boldOn6.addEventListener('click', update6);
+            italicOn6.addEventListener('click', update6);
+
+
+
+                </script>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="ch_set">
+
+              <div class="controlbar2">
+               Bold
+               <input type="checkbox" id="bold-on-7">
+               Italic
+               <input type="checkbox" id="italic-on-7">
+
+             </div>
+
+              <p id="directions">
+                In 500m take sharp right ↗ <br>
+                Integral Active Steering: ON
+                Make U-turn at intersection ↓ <br>
+
+              </p>
+              <br>
+              <br>
+              <br>
+
+                <p class="ptsize" >Crt, 60px </p>
+
+            </div>
+
+            <script>
+
+            var boldOn7 = document.querySelector('#bold-on-7');
+            var italicOn7 = document.querySelector('#italic-on-7');
+            var direc  = document.getElementById("directions");
+
+            function update7() {
+              var wght = boldOn7.checked ? 165 : 95;
+              var ital = italicOn7.checked ? 30 : 0;
+              direc.style.fontVariationSettings = getSettings(wght, ital)
+            }
+
+            update7();
+            boldOn7.addEventListener('click', update7);
+            italicOn7.addEventListener('click', update7);
+
+                </script>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="ch_set">
+
+              <div class="controlbar2">
+               Bold
+               <input type="checkbox" id="bold-on-8">
+               Italic
+               <input type="checkbox" id="italic-on-8">
+
+              </div>
+
+              <p id="maja">Aa</p>
+<br>
+<br>
+<br>
+<br>
+
+
+
+              <p class="ptsize" >Crt, 350px </p>
+
+            </div>
+
+            <script>
+
+            var boldOn8 = document.querySelector('#bold-on-8');
+            var italicOn8 = document.querySelector('#italic-on-8');
+            var biga  = document.getElementById("maja");
+
+            function update8() {
+              var wght = boldOn8.checked ? 165 : 95;
+              var ital = italicOn8.checked ? 30 : 0;
+              biga.style.fontVariationSettings = getSettings(wght, ital)
+            }
+
+            update8();
+            boldOn8.addEventListener('click', update8);
+            italicOn8.addEventListener('click', update8);
+
+                </script>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="ch_set">
+
+              <div class="controlbar2">
+               Bold
+               <input type="checkbox" id="bold-on-9">
+               Italic
+               <input type="checkbox" id="italic-on-9">
+
+              </div>
+
+              <p id="tyt" contenteditable="true" spellcheck="false">Type your own text</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br><br>
+              <br>
+              <br><br>
+              <br>
+              <br>
+              <p class ="ptsize"> Crt, 90px </p>
+
+            </div>
+
+            <script>
+
+            var boldOn9 = document.querySelector('#bold-on-9');
+            var italicOn9 = document.querySelector('#italic-on-9');
+            var tytxt  = document.getElementById("tyt");
+
+            function update9() {
+              var wght = boldOn9.checked ? 165 : 95;
+              var ital = italicOn9.checked ? 30 : 0;
+              tytxt.style.fontVariationSettings = getSettings(wght, ital)
+            }
+
+            update9();
+            boldOn9.addEventListener('click', update9);
+            italicOn9.addEventListener('click', update9);
+
+                </script>
+          </div>
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+
+      </div>
+
+      <hr class="hrv">
+
+      <button class="accordion">♩ Under the Hood</button>
+      <div class="panel">
+
+
+        <div class ="txt">
+
+  <p id="c-"> C </p>
+  <p id="r-"> r </p>
+  <p id="t-"> t </p>
+
+  <p id="cc-"> C </p>
+  <p id="rr-"> r </p>
+  <p id="tt-"> t </p>
+  <p id="comma-">&nbsp; </p>
+
+
+
+
+
+  <!-- <p id="a-">A</p>
+  <p id="d-">d</p>
+  <p id="a1-">a</p>
+  <p id="p-">p</p>
+  <p id="t1-">t</p>
+  <p id="i-">i</p>
+  <p id="v-">v</p>
+  <p id="e-">e</p>
+  <br>
+
+
+   <p id="t2-">T</p>
+  <p id="y-">y</p>
+  <p id="p1-">p</p>
+  <p id="e1-">e</p>
+  <p id="f-">f</p>
+  <p id="a2-">a</p>
+  <p id="c1-">c</p>
+  <p id="e2-">e &nbsp;</p>
+
+
+  <p id="f1-">f</p>
+  <p id="o-">o</p>
+  <p id="r1-">r</p>
+  <br>
+
+
+  <p id="a3-">A</p>
+  <p id="u-">u</p>
+  <p id="t3-">t</p>
+  <p id="o1-">o</p>
+  <p id="m-">m</p>
+  <p id="o2-">o</p>
+  <p id="b-">b</p>
+  <p id="i2-">i</p>
+  <p id="l-">l</p>
+  <p id="e3-">e</p>
+<br>
+
+  <p id="s-">S</p>
+  <p id="c2-">c</p>
+  <p id="r2-">r</p>
+  <p id="e4-">e</p>
+  <p id="e5-">e</p>
+  <p id="n-">n</p>
+  <p id="s1-">s.</p>
+  <br> -->
+
+
+<hr>
+
+</div>
+
+<div class="distance">
+  <p id="one">1</p>
+  <p id="two">2</p>
+  <p id="three">3</p>
+  <p id="four">4</p>
+  <p id="five">5</p>
+  <br>
+</div>
+  <div class ="distance-l">
+  <p id="six">6</p>
+  <p id="seven">7</p>
+  <p id="eight">8</p>
+  <p id="nine">9</p>
+  <p id="zero">0</p>
+
+  <p id="comma-">&nbsp; </p>
+
+  </div>
+  <br>
+    <hr id="line2">
+
+
+
+
+
+
+
+<div class ="arrows90">
+     <p id="arrow"> 1 </p>
+     <p id="arrow1"> 1 </p>
+     <p id="arrow2"> 1 </p>
+     <p id="arrow3"> 1 </p>
+     <p id="arrow4"> 1 </p>
+     <p id="arrow5"> 1 </p>
+     <p id="arrow6"> 1 </p>
+     <p id="arrow7"> 1 </p>
+     <p id="arrow8"> 1 </p>
+     <p id="arrow9"> 1 </p>
+
+ </div>
+
+
+
+
+
+
+
+      </div>
+
+      <hr class="hrv">
+
+
+      <button class="accordion">♮ Tech Spex</button>
+      <div class="panel">
+        <div class = "tech">
+          "Crt", or "Circuit", is a typeface which combines the humanist concept of letter legibility based on open letter shapes with geometric forms inspired by symmetry and alignment.
+          The sharp points at the end of the letter curves are sliced to decrease vibrance and fit the pixels on screens. Its variable nature is exploited to enable it
+          to gradually adapt to situations such as light presence or, in the case of the numberset, acceleration.
+          The result is an adaptive letter system finalized for automotive display screens.
+        </div>
+      </div>
+
+
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+
+
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mainV.js"></script>
+
+
+</body>
+
+</html>

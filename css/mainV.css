@@ -1,0 +1,1481 @@
+body {
+  background-color: #00334d;
+}
+
+#clockbox{
+   color:white;
+   font-family:crtgx;
+   font-variation-settings: "wght" 95;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 0.8em;
+   float: left;
+}
+
+.location{
+ color:white;
+ font-family:crtgx;
+ font-variation-settings: "wght" 95;
+ padding-right: 20px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-size: 0.8em;
+ text-align: right;
+}
+
+.accordion {
+   background-color: #00334d;
+   color: white;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 5.3vw;
+   transition: 0.4s;
+   font-family: "crtgx";
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 20px;
+   font-variation-settings: "wght" 95;
+}
+
+.active, .accordion:hover {
+   background-color: #3773ae;
+}
+
+.panel {
+ margin-left: 20px;
+ margin-right:20px;
+   background-color: white;
+   max-height: 0;
+   overflow: scroll;
+   transition: max-height 0.7s ease-out;
+}
+
+.slideContainer{
+}
+
+@font-face {
+ font-family: 'crtgx';
+ src: url("fonts/crtgx.ttf") format("truetype");
+}
+
+.hrv {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid white;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+#line2{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+#blackline{
+ border-top: 1px solid black;
+ margin-left: 0px;
+ margin-right:0px;
+}
+
+.threesixpts{
+ font-family: "crtgx";
+ font-size: 17pt;
+ color: black;
+ padding: 1em;
+ font-variation-settings: "wght" 95;
+}
+
+
+
+
+.ch_set{
+ font-family:"crtgx";
+ color: black;
+ font-variation-settings: "wght" 95;
+ text-decoration: none;
+ line-height: 1.5;
+ width:100%;
+
+}
+
+
+.words{
+font-family:"crtgx";
+color: black;
+font-variation-settings: "wght" 95;
+text-decoration: none;
+width: 100%;
+}
+
+.bigch{
+ font-family:"crtgx";
+ padding-top: -50px;
+ font-size: 50vw;
+ color: black;
+ padding: 0;
+ font-variation-settings: "wght" 95;
+ text-decoration: none;
+}
+
+.typetxt{
+  font-family:"crtgx";
+  font-size: 10vw;
+  color: black;
+  padding: 1.2em;
+  font-variation-settings: "wght" 95;
+  text-decoration: none;
+}
+
+
+/*ONE*/
+
+
+@keyframes animate-fit {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animated {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fit;
+   animation-direction: alternate;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+
+
+}
+
+@keyframes animate-ital {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.ital {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-ital;
+   animation-direction: alternate;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+
+}
+
+/*TWO*/
+
+@keyframes animate-fit2 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animated2 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fit2;
+   animation-direction: alternate;
+   animation-duration: 1.55s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+
+
+}
+
+@keyframes animate-ital2 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.ital2 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-ital2;
+   animation-direction: alternate;
+   animation-duration: 1.55s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+
+/*THREE*/
+
+@keyframes animate-fit3 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animated3 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fit3;
+   animation-direction: alternate;
+   animation-duration: 1.6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+}
+
+@keyframes animate-ital3 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.ital3 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-ital3;
+   animation-direction: alternate;
+   animation-duration: 1.6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+
+}
+
+/*FOUR*/
+
+@keyframes animate-fit4 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animated4 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fit4;
+   animation-direction: alternate;
+   animation-duration: 1.65s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+}
+
+@keyframes animate-ital4 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.ital4 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-ital4;
+   animation-direction: alternate;
+   animation-duration: 1.65s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+
+/*RIGHT SIDE*/
+
+
+/*ONE*/
+
+
+@keyframes animate-fitr {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animatedr {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fitr;
+   animation-direction: alternate;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: right;
+
+
+}
+
+@keyframes animate-italr {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.italr {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-italr;
+   animation-direction: alternate;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float:left;
+
+}
+
+/*TWO*/
+
+@keyframes animate-fitr2 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animatedr2 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fitr2;
+   animation-direction: alternate;
+   animation-duration: 1.55s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+
+
+}
+
+@keyframes animate-italr2 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.italr2 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-italr2;
+   animation-direction: alternate;
+   animation-duration: 1.55s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+
+/*THREE*/
+
+@keyframes animate-fitr3 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animatedr3 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fitr3;
+   animation-direction: alternate;
+   animation-duration: 1.6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+}
+
+@keyframes animate-italr3 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.italr3 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-italr3;
+   animation-direction: alternate;
+   animation-duration: 1.6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+
+}
+
+/*FOUR*/
+
+@keyframes animate-fitr4 {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+.animatedr4 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-fitr4;
+   animation-direction: alternate;
+   animation-duration: 1.65s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   float: left;
+}
+
+@keyframes animate-italr4 {
+   from {
+       font-variation-settings: "ital" 0;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+.italr4 {
+   font-family: crtgx;
+   font-size: 10.0vw;
+   animation-name: animate-italr4;
+   animation-direction: alternate;
+   animation-duration: 1.65s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+
+
+#p-1 {
+   font-size: 37px;
+   padding-bottom: 40px;
+   transition: font-variation-settings 0.7s ease-in-out;
+   font-variation-settings:'wght' 95;
+}
+
+#p-2 {
+ font-size: 25px;
+ padding-bottom: 40px;
+ transition: font-variation-settings 0.7s ease-in-out;
+ font-variation-settings:'wght' 95;
+
+}
+
+#p-3 {
+ font-size: 14px;
+ padding-bottom: 40px;
+ transition: font-variation-settings 0.7s ease-in-out;
+ font-variation-settings:'wght' 95;
+}
+
+.ptsize{
+ font-size: 9pt;
+ padding-top: 20px;
+ padding-bottom: 40px;
+ padding-left:  70px;
+}
+
+#ptsizetxt{
+ font-size:9pt;
+ text-align: right;
+ font-variation-settings: "wght" 95;
+}
+
+
+.controlbar{
+ padding-bottom: 20px;
+ padding-top: 5px;
+ font-size: 12px;
+}
+
+.controlbar2{
+ padding-left: 20px;
+ padding-bottom: 20px;
+ padding-top: 25px;
+ font-size: 12px;
+
+
+
+}
+
+
+
+
+
+/*SWIPER START*/
+
+html, body {
+ position: relative;
+ height: 100%;
+}
+
+
+.swiper-container {
+ width: 100%;
+ height: 100%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.swiper-slide {
+ text-align: left;
+ background: #fff;
+ /* Center slide text vertically */
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ -webkit-align-items: center;
+ align-items: center;
+}
+/*SLIDER END*/
+.tech{
+ font-family: "crtgx";
+ font-size: 25px;
+ color: black;
+ padding: 1em;
+ font-variation-settings: "wght" 95;
+}
+
+#alphabet{
+  font-size: 60px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  transition: font-variation-settings 0.7s ease-in-out;
+  font-variation-settings:'wght' 95;
+}
+
+#address{
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: 90px;
+  transition: font-variation-settings 0.7s ease-in-out;
+  font-variation-settings:'wght' 95;
+}
+
+#directions{
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: 60px;
+  transition: font-variation-settings 0.7s ease-in-out;
+  font-variation-settings:'wght' 95;
+}
+
+#maja{
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: 350px;
+  transition: font-variation-settings 0.7s ease-in-out;
+  font-variation-settings:'wght' 95;
+}
+
+#tyt{
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: 90px;
+  transition: font-variation-settings 0.7s ease-in-out;
+  font-variation-settings:'wght' 95;
+
+}
+
+
+.distance{
+  font-size: 10vw;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.distance-l{
+  font-size: 10vw;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  padding-top: 20px;
+}
+
+
+
+
+.txt{
+  font-family: 'crtgx';
+  font-variation-settings: "wght" 95;
+  font-size: 10vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#c-{
+  float:left;
+  animation-name: t-one;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+
+
+
+}
+
+#r-{
+  float:left;
+  animation-name: t-one;
+  animation-duration: 1.5s;
+  animation-delay: 1.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+}
+
+#t-{
+  float:left;
+  animation-name: t-one;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+}
+
+
+
+
+#cc-{
+  float:left;
+  animation-name: tt-one;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+
+
+
+}
+
+#rr-{
+  float:left;
+  animation-name: tt-one;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+
+
+}
+
+#tt-{
+  float:left;
+  animation-name: tt-one;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-variation-settings: "wght" 95;
+
+}
+
+@keyframes tt-one {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+/*
+#comma-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#a-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 2.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#d-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#a1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 3.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#p-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 3.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#t1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 4.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#i-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 4.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#v-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 5.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+#e-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 5.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#t2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 6.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#y-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 6.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#p1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 7.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#e1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 7.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#f-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 7.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#a2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 8.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#c1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 8.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#e2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 9.0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+#f1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 9.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#o-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#r1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 10.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+#a3-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 11s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+#u-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 11.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#t3-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 12s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#o1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 12.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#m-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 13s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#o2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 13.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#b-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 14s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#i2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 14.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#l-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#e3-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 15.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+#s-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 16s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#c2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 16.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#r2-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 17s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#e4-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 18s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#e5-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 18.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#n-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 19s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#s1-{
+  float:left;
+  animation-name: c-one;
+  animation-duration: 1.5s;
+  animation-delay: 19.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+ */
+
+@keyframes c-one {
+   from {
+       font-variation-settings: "wght" 95;
+   }
+   to {
+       font-variation-settings: "wght" 165;
+   }
+}
+
+@keyframes t-one {
+   from {
+       font-variation-settings: "ital" 0, "wght" 95;
+   }
+   to {
+       font-variation-settings: "ital" 30, "wght" 95;
+   }
+}
+
+
+
+
+hr{
+  display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1.7px solid black;
+}
+
+
+
+#one{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#two{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+
+}
+
+#three{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#four{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#five{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#six{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 4.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#seven{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#eight{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 5.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#nine{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+#zero{
+  float:left;
+  animation-name: numbersw;
+  animation-duration: 2s;
+  animation-delay: 6.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family:numbersgx;
+  /* font-variation-settings: "wght" 95; */
+
+}
+
+
+
+#arrow{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow1{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 7.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow2{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow3{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 8.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow4{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 9s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow5{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 9.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow6{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow7{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 10.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow8{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 11s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow9{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 11.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow10{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 12s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+
+}
+
+#arrow11{
+  float:left;
+  animation-name: arrow-one;
+  animation-duration: 5s;
+  animation-delay: 12.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: arrowgx;
+}
+
+@keyframes arrow-one {
+   from {
+       font-variation-settings: "ital" -30;
+   }
+   to {
+       font-variation-settings: "ital" 30;
+   }
+}
+
+
+
+
+@keyframes numbersw {
+   from {
+       font-variation-settings:"wght"95, "wdth" 95, "opsz" 0;
+   }
+   to {
+       font-variation-settings:"wght"95, "wdth" 165, "opsz" 140;
+   }
+}
+
+.arrows{
+  font-size: 10vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  float:left;
+}
+
+.arrows90{
+  font-size: 10vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  float:left;
+}
+
+@font-face {
+  font-family: 'numbersgx';
+  src: url("fonts/numbersgx.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'arrowgx';
+  src: url("fonts/arrowgx.ttf") format("truetype");
+}
